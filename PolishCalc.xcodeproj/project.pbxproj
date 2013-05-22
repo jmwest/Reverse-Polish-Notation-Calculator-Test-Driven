@@ -17,7 +17,19 @@
 		27971E48174D25F200D0A8A2 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27971E47174D25F200D0A8A2 /* Default@2x.png */; };
 		27971E4A174D25F200D0A8A2 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27971E49174D25F200D0A8A2 /* Default-568h@2x.png */; };
 		27971E4D174D25F200D0A8A2 /* PCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27971E4C174D25F200D0A8A2 /* PCViewController.m */; };
-		27971E50174D25F200D0A8A2 /* PCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27971E4E174D25F200D0A8A2 /* PCViewController.xib */; };
+		27971E5C174D265800D0A8A2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27971E33174D25F200D0A8A2 /* UIKit.framework */; };
+		27971E5D174D265800D0A8A2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27971E35174D25F200D0A8A2 /* Foundation.framework */; };
+		27971E5E174D265800D0A8A2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27971E37174D25F200D0A8A2 /* CoreGraphics.framework */; };
+		27971E64174D265800D0A8A2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 27971E62174D265800D0A8A2 /* InfoPlist.strings */; };
+		27971E66174D265800D0A8A2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 27971E65174D265800D0A8A2 /* main.m */; };
+		27971E6C174D265800D0A8A2 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 27971E6B174D265800D0A8A2 /* Default.png */; };
+		27971E6E174D265800D0A8A2 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27971E6D174D265800D0A8A2 /* Default@2x.png */; };
+		27971E70174D265800D0A8A2 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27971E6F174D265800D0A8A2 /* Default-568h@2x.png */; };
+		27971E75174D273D00D0A8A2 /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27971E74174D273D00D0A8A2 /* GHUnitIOS.framework */; };
+		27971E77174D27B900D0A8A2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27971E76174D27B900D0A8A2 /* QuartzCore.framework */; };
+		27971E7A174D283000D0A8A2 /* CalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27971E79174D283000D0A8A2 /* CalculatorTests.m */; };
+		27971E7D174D295700D0A8A2 /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 27971E7C174D295700D0A8A2 /* Calculator.m */; };
+		27971E7E174D295700D0A8A2 /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 27971E7C174D295700D0A8A2 /* Calculator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,7 +48,20 @@
 		27971E49174D25F200D0A8A2 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		27971E4B174D25F200D0A8A2 /* PCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCViewController.h; sourceTree = "<group>"; };
 		27971E4C174D25F200D0A8A2 /* PCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PCViewController.m; sourceTree = "<group>"; };
-		27971E4F174D25F200D0A8A2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/PCViewController.xib; sourceTree = "<group>"; };
+		27971E5A174D265800D0A8A2 /* PolishCalcTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PolishCalcTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		27971E61174D265800D0A8A2 /* PolishCalcTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PolishCalcTests-Info.plist"; sourceTree = "<group>"; };
+		27971E63174D265800D0A8A2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		27971E65174D265800D0A8A2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		27971E67174D265800D0A8A2 /* PolishCalcTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PolishCalcTests-Prefix.pch"; sourceTree = "<group>"; };
+		27971E6B174D265800D0A8A2 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		27971E6D174D265800D0A8A2 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		27971E6F174D265800D0A8A2 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		27971E74174D273D00D0A8A2 /* GHUnitIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GHUnitIOS.framework; sourceTree = "<group>"; };
+		27971E76174D27B900D0A8A2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		27971E78174D283000D0A8A2 /* CalculatorTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorTests.h; sourceTree = "<group>"; };
+		27971E79174D283000D0A8A2 /* CalculatorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorTests.m; sourceTree = "<group>"; };
+		27971E7B174D295700D0A8A2 /* Calculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Calculator.h; sourceTree = "<group>"; };
+		27971E7C174D295700D0A8A2 /* Calculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Calculator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +75,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		27971E57174D265800D0A8A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27971E77174D27B900D0A8A2 /* QuartzCore.framework in Frameworks */,
+				27971E5C174D265800D0A8A2 /* UIKit.framework in Frameworks */,
+				27971E5D174D265800D0A8A2 /* Foundation.framework in Frameworks */,
+				27971E5E174D265800D0A8A2 /* CoreGraphics.framework in Frameworks */,
+				27971E75174D273D00D0A8A2 /* GHUnitIOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -57,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				27971E39174D25F200D0A8A2 /* PolishCalc */,
+				27971E5F174D265800D0A8A2 /* PolishCalcTests */,
 				27971E32174D25F200D0A8A2 /* Frameworks */,
 				27971E30174D25F200D0A8A2 /* Products */,
 			);
@@ -66,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				27971E2F174D25F200D0A8A2 /* PolishCalc.app */,
+				27971E5A174D265800D0A8A2 /* PolishCalcTests.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,6 +112,8 @@
 		27971E32174D25F200D0A8A2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				27971E76174D27B900D0A8A2 /* QuartzCore.framework */,
+				27971E74174D273D00D0A8A2 /* GHUnitIOS.framework */,
 				27971E33174D25F200D0A8A2 /* UIKit.framework */,
 				27971E35174D25F200D0A8A2 /* Foundation.framework */,
 				27971E37174D25F200D0A8A2 /* CoreGraphics.framework */,
@@ -87,8 +128,9 @@
 				27971E43174D25F200D0A8A2 /* PCAppDelegate.m */,
 				27971E4B174D25F200D0A8A2 /* PCViewController.h */,
 				27971E4C174D25F200D0A8A2 /* PCViewController.m */,
-				27971E4E174D25F200D0A8A2 /* PCViewController.xib */,
 				27971E3A174D25F200D0A8A2 /* Supporting Files */,
+				27971E7B174D295700D0A8A2 /* Calculator.h */,
+				27971E7C174D295700D0A8A2 /* Calculator.m */,
 			);
 			path = PolishCalc;
 			sourceTree = "<group>";
@@ -103,6 +145,30 @@
 				27971E45174D25F200D0A8A2 /* Default.png */,
 				27971E47174D25F200D0A8A2 /* Default@2x.png */,
 				27971E49174D25F200D0A8A2 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		27971E5F174D265800D0A8A2 /* PolishCalcTests */ = {
+			isa = PBXGroup;
+			children = (
+				27971E60174D265800D0A8A2 /* Supporting Files */,
+				27971E78174D283000D0A8A2 /* CalculatorTests.h */,
+				27971E79174D283000D0A8A2 /* CalculatorTests.m */,
+			);
+			path = PolishCalcTests;
+			sourceTree = "<group>";
+		};
+		27971E60174D265800D0A8A2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				27971E61174D265800D0A8A2 /* PolishCalcTests-Info.plist */,
+				27971E62174D265800D0A8A2 /* InfoPlist.strings */,
+				27971E65174D265800D0A8A2 /* main.m */,
+				27971E67174D265800D0A8A2 /* PolishCalcTests-Prefix.pch */,
+				27971E6B174D265800D0A8A2 /* Default.png */,
+				27971E6D174D265800D0A8A2 /* Default@2x.png */,
+				27971E6F174D265800D0A8A2 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -125,6 +191,23 @@
 			name = PolishCalc;
 			productName = PolishCalc;
 			productReference = 27971E2F174D25F200D0A8A2 /* PolishCalc.app */;
+			productType = "com.apple.product-type.application";
+		};
+		27971E59174D265800D0A8A2 /* PolishCalcTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27971E71174D265800D0A8A2 /* Build configuration list for PBXNativeTarget "PolishCalcTests" */;
+			buildPhases = (
+				27971E56174D265800D0A8A2 /* Sources */,
+				27971E57174D265800D0A8A2 /* Frameworks */,
+				27971E58174D265800D0A8A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PolishCalcTests;
+			productName = PolishCalcTests;
+			productReference = 27971E5A174D265800D0A8A2 /* PolishCalcTests.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -150,6 +233,7 @@
 			projectRoot = "";
 			targets = (
 				27971E2E174D25F200D0A8A2 /* PolishCalc */,
+				27971E59174D265800D0A8A2 /* PolishCalcTests */,
 			);
 		};
 /* End PBXProject section */
@@ -163,7 +247,17 @@
 				27971E46174D25F200D0A8A2 /* Default.png in Resources */,
 				27971E48174D25F200D0A8A2 /* Default@2x.png in Resources */,
 				27971E4A174D25F200D0A8A2 /* Default-568h@2x.png in Resources */,
-				27971E50174D25F200D0A8A2 /* PCViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27971E58174D265800D0A8A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27971E64174D265800D0A8A2 /* InfoPlist.strings in Resources */,
+				27971E6C174D265800D0A8A2 /* Default.png in Resources */,
+				27971E6E174D265800D0A8A2 /* Default@2x.png in Resources */,
+				27971E70174D265800D0A8A2 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +271,17 @@
 				27971E40174D25F200D0A8A2 /* main.m in Sources */,
 				27971E44174D25F200D0A8A2 /* PCAppDelegate.m in Sources */,
 				27971E4D174D25F200D0A8A2 /* PCViewController.m in Sources */,
+				27971E7D174D295700D0A8A2 /* Calculator.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27971E56174D265800D0A8A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27971E66174D265800D0A8A2 /* main.m in Sources */,
+				27971E7A174D283000D0A8A2 /* CalculatorTests.m in Sources */,
+				27971E7E174D295700D0A8A2 /* Calculator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,12 +296,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		27971E4E174D25F200D0A8A2 /* PCViewController.xib */ = {
+		27971E62174D265800D0A8A2 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				27971E4F174D25F200D0A8A2 /* en */,
+				27971E63174D265800D0A8A2 /* en */,
 			);
-			name = PCViewController.xib;
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -274,6 +379,46 @@
 			};
 			name = Release;
 		};
+		27971E72174D265800D0A8A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PolishCalcTests/PolishCalcTests-Prefix.pch";
+				INFOPLIST_FILE = "PolishCalcTests/PolishCalcTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObJC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		27971E73174D265800D0A8A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PolishCalcTests/PolishCalcTests-Prefix.pch";
+				INFOPLIST_FILE = "PolishCalcTests/PolishCalcTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObJC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -291,6 +436,14 @@
 			buildConfigurations = (
 				27971E54174D25F200D0A8A2 /* Debug */,
 				27971E55174D25F200D0A8A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		27971E71174D265800D0A8A2 /* Build configuration list for PBXNativeTarget "PolishCalcTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27971E72174D265800D0A8A2 /* Debug */,
+				27971E73174D265800D0A8A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
