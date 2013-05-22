@@ -7,6 +7,10 @@
 //
 
 #import "PCViewController.h"
+#define LEFT_X 0
+#define TOP_Y 0
+#define SCREEN_HEIGHT 480
+#define SCREEN_WIDTH 320
 
 @interface PCViewController ()
 
@@ -17,7 +21,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    self.view = [[CalculatorView alloc] initWithFrame:CGRectMake(LEFT_X, TOP_Y, SCREEN_WIDTH, SCREEN_HEIGHT)];
 }
 
 - (void)didReceiveMemoryWarning

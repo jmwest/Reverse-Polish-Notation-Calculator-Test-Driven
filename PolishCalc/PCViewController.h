@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CalculatorView.h"
 
 @interface PCViewController : UIViewController
+
+@property (strong, nonatomic) CalculatorView *view;
 
 @end

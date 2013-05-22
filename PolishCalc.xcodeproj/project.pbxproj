@@ -30,6 +30,9 @@
 		27971E7A174D283000D0A8A2 /* CalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27971E79174D283000D0A8A2 /* CalculatorTests.m */; };
 		27971E7D174D295700D0A8A2 /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 27971E7C174D295700D0A8A2 /* Calculator.m */; };
 		27971E7E174D295700D0A8A2 /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 27971E7C174D295700D0A8A2 /* Calculator.m */; };
+		27971E85174D68C000D0A8A2 /* CalculatorViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27971E84174D68BF00D0A8A2 /* CalculatorViewControllerTests.m */; };
+		27971E88174D695700D0A8A2 /* CalculatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 27971E87174D695700D0A8A2 /* CalculatorView.m */; };
+		27971E89174D695700D0A8A2 /* CalculatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 27971E87174D695700D0A8A2 /* CalculatorView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +65,10 @@
 		27971E79174D283000D0A8A2 /* CalculatorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorTests.m; sourceTree = "<group>"; };
 		27971E7B174D295700D0A8A2 /* Calculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Calculator.h; sourceTree = "<group>"; };
 		27971E7C174D295700D0A8A2 /* Calculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Calculator.m; sourceTree = "<group>"; };
+		27971E83174D68BF00D0A8A2 /* CalculatorViewControllerTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorViewControllerTests.h; sourceTree = "<group>"; };
+		27971E84174D68BF00D0A8A2 /* CalculatorViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorViewControllerTests.m; sourceTree = "<group>"; };
+		27971E86174D695700D0A8A2 /* CalculatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorView.h; sourceTree = "<group>"; };
+		27971E87174D695700D0A8A2 /* CalculatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +138,8 @@
 				27971E3A174D25F200D0A8A2 /* Supporting Files */,
 				27971E7B174D295700D0A8A2 /* Calculator.h */,
 				27971E7C174D295700D0A8A2 /* Calculator.m */,
+				27971E86174D695700D0A8A2 /* CalculatorView.h */,
+				27971E87174D695700D0A8A2 /* CalculatorView.m */,
 			);
 			path = PolishCalc;
 			sourceTree = "<group>";
@@ -155,6 +164,8 @@
 				27971E60174D265800D0A8A2 /* Supporting Files */,
 				27971E78174D283000D0A8A2 /* CalculatorTests.h */,
 				27971E79174D283000D0A8A2 /* CalculatorTests.m */,
+				27971E83174D68BF00D0A8A2 /* CalculatorViewControllerTests.h */,
+				27971E84174D68BF00D0A8A2 /* CalculatorViewControllerTests.m */,
 			);
 			path = PolishCalcTests;
 			sourceTree = "<group>";
@@ -272,6 +283,7 @@
 				27971E44174D25F200D0A8A2 /* PCAppDelegate.m in Sources */,
 				27971E4D174D25F200D0A8A2 /* PCViewController.m in Sources */,
 				27971E7D174D295700D0A8A2 /* Calculator.m in Sources */,
+				27971E88174D695700D0A8A2 /* CalculatorView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +294,8 @@
 				27971E66174D265800D0A8A2 /* main.m in Sources */,
 				27971E7A174D283000D0A8A2 /* CalculatorTests.m in Sources */,
 				27971E7E174D295700D0A8A2 /* Calculator.m in Sources */,
+				27971E85174D68C000D0A8A2 /* CalculatorViewControllerTests.m in Sources */,
+				27971E89174D695700D0A8A2 /* CalculatorView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
