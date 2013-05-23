@@ -45,14 +45,14 @@
 
 - (void)testCanPushNumberOntoStack
 {
-    [calc pushNumberOnStack:@"3"];
+    [calc pushNumberOnStack:@"11"];
     GHAssertTrue([calc.stack count] == 1, @"Pushing a number onto the empty stack should yield a count of 1");
 }
 
 - (void)testNumberPushedOnStackIsNumberOnStack
 {
-    [calc pushNumberOnStack:@"3"];
-    GHAssertEqualStrings([calc.stack objectAtIndex:0], @"3" , @"Object we push on stack should be the object on the stack");
+    [calc pushNumberOnStack:@"11"];
+    GHAssertEqualStrings([calc.stack objectAtIndex:0], @"11" , @"Object we push on stack should be the object on the stack");
 }
 
 - (void)testThatNumberPushedOnStackIsLastNumberOnStack

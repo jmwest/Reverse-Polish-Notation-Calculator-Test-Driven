@@ -33,8 +33,12 @@
 
 - (void)testCurrentOperandDoesNotInitAsNil
 {
-    controller.currentOperand = [[NSString alloc] init];
     GHAssertNotNil(controller.currentOperand, @"The current operand is not initialized to nil");
+}
+
+- (void)testOperandPressedDoesNotInitAsNil
+{
+    GHAssertNotNil(controller.operandPressed, @"The operand pressed is not initialized to nil");
 }
 
 - (void)testCurrentOperandHasLengthZeroAtStart
@@ -73,24 +77,105 @@
     GHAssertEqualStrings(controller.currentOperand, @"1", @"CurrentOperand should be a string with operandPressed appended onto it unless currentOperand is nil");
 }
 
+- (void)testThatTheViewControllerHasACalculator
+{
+    GHAssertNotNil(controller.calc, @"The controller should have an initialized calculator");
+}
+
 - (void)testWhenEnterIsPressedCurrentOperandIsAddedToStack
 {
-    calc = [[Calculator alloc] init];
+    UIButton *oneMock = [[UIButton alloc] init];
+    [oneMock setTitle:@"1" forState:UIControlStateNormal];
+    [controller operandWasPressed:oneMock];
+    [controller operandWasPressed:oneMock];
+    UIButton *enterMock = [[UIButton alloc] init];
+    GHAssertEquals([controller enterWasPressed:enterMock], YES, @"When the enter button is pressed, the method should return YES if it successfully sends the current operand to the model");
+    
+}
+
+- (void)testThatCurrentOperandIsSetToNilWhenEnterIsPressed
+{
     UIButton *oneMock = [[UIButton alloc] init];
     [oneMock setTitle:@"1" forState:UIControlStateNormal];
     [controller operandWasPressed:oneMock];
     [controller operandWasPressed:oneMock];
     UIButton *enterMock = [[UIButton alloc] init];
     [controller enterWasPressed:enterMock];
-    GHAssertTrue([[calc.stack objectAtIndex:0] isEqualToString: @"11"], @"When enter is pressed, the current operand should be added to the stack");
+    GHAssertTrue([controller.currentOperand length] == 0, @"When the enter button is pressed, currentOperand is set to an empty string");
+}
+
+-(void)testThatOperationPressedIsCorrectOperationPressed
+{
+    [controller.calc.stack addObject:@"1"];
+    [controller.calc.stack addObject:@"34"];
+    [controller.calc.stack addObject:@"19"];
+    [controller.calc.stack addObject:@"13"];
+    [controller.calc.stack addObject:@"7"];
+    UIButton *addMock = [[UIButton alloc] init];
+    [addMock setTitle:@"+" forState:UIControlStateNormal];
+    [controller operationWasPressed:addMock];
+    GHAssertTrue([controller.operationPressed isEqualToString:@"+"], @"This should return YES if the add operation was selected");
+}
+
+-(void)testThatCorrectOperationIsSentToModel
+{
+    [controller.calc.stack addObject:@"1"];
+    [controller.calc.stack addObject:@"34"];
+    [controller.calc.stack addObject:@"19"];
+    [controller.calc.stack addObject:@"13"];
+    [controller.calc.stack addObject:@"7"];
+    UIButton *addMock = [[UIButton alloc] init];
+    [addMock setTitle:@"+" forState:UIControlStateNormal];
+    GHAssertTrue([controller operationWasPressed:addMock], @"The operation that is used should be addition");
+}
+
+- (void)testCurrentOperandIsCommittedIfOperationIsPressed
+{
+    [controller.calc.stack addObject:@"1"];
+    [controller.calc.stack addObject:@"34"];
+    [controller.calc.stack addObject:@"19"];
+    [controller.calc.stack addObject:@"13"];
+    controller.currentOperand = @"12";
+    UIButton *addMock = [[UIButton alloc] init];
+    [addMock setTitle:@"+" forState:UIControlStateNormal];
+    [controller operationWasPressed:addMock];
+    GHAssertTrue([[controller.calc.stack objectAtIndex:[controller.calc.stack count] - 1] isEqualToString:@"25"], @"If there is a current operand, and an operation is pressed, the current operand should be added to the stack");
+}
+
+-(void)testIfHittingClearWillSetStackCountToZero
+{
+    [controller.calc.stack addObject:@"1"];
+    [controller.calc.stack addObject:@"34"];
+    [controller.calc.stack addObject:@"19"];
+    [controller.calc.stack addObject:@"13"];
+    UIButton *clearMock = [[UIButton alloc] init];
+    [controller clearWasPressed: clearMock];
+    GHAssertTrue([controller.calc.stack count] == 0, @"When the Clear button is pressed, the stack should be an empty string; count will be zero" );
     
 }
 
-//- (void)testCorrectNumeralIsPulledFromButton
+-(void)testIfHittingClearWillSetCurrentOperandToEmptyString
+{
+    controller.currentOperand = @"12";
+    UIButton *clearMock = [[UIButton alloc] init];
+    [controller clearWasPressed: clearMock];
+    GHAssertTrue([controller.currentOperand length] == 0, @"When the Clear button is pressed, the currentOperand should be an empty string; length will be zero" );
+}
+
+-(void)testIfHittingClearWillNotMakeStackNil
+{
+    [controller.calc.stack addObject:@"1"];
+    [controller.calc.stack addObject:@"34"];
+    [controller.calc.stack addObject:@"19"];
+    [controller.calc.stack addObject:@"13"];
+    UIButton *clearMock = [[UIButton alloc] init];
+    [controller clearWasPressed: clearMock];
+    GHAssertNotNil(controller.calc.stack, @"The stack should not be set to nil after clear is hit");
+}
+
+//-(void)testIfHittingEveryOperationRespondsToOperationWasSelectedMethod
 //{
-//    controller.operandPressed = @"4";
-//    [controller appendNewNumeral];
-//    
+//    GHAssertTrue([controller respondsToSelector:@selector(operationWasPressed:)] == NO, @"This should return true if the add button responds to operationWasPressed");
 //}
 
 @end

@@ -26,5 +26,6 @@
 @property (strong, nonatomic) UIButton *divide;
 @property (strong, nonatomic) UIButton *enter;
 @property (strong, nonatomic) UILabel *display;
+@property (strong, nonatomic) UIButton *clear;
 
 @end

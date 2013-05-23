@@ -21,6 +21,9 @@
 #define BUTTON_WIDTH 50
 #define ENTER_WIDTH 124
 #define DISPLAY_WIDTH 272
+#define CLEAR_WIDTH ((246+50)-24)
+#define CLEAR_HEIGHT 25
+
 
 @implementation CalculatorView
 
@@ -40,6 +43,7 @@
 @synthesize divide = _divide;
 @synthesize enter = _enter;
 @synthesize display = _display;
+@synthesize clear = _clear;
 
 - (id)initWithFrame:(CGRect)frame
 {
@@ -112,6 +116,10 @@
         [self.display setTextAlignment:NSTextAlignmentRight];
         [self.display setText:@"0"];
         
+        self.clear =[UIButton buttonWithType:UIButtonTypeRoundedRect];
+                     [self.clear setFrame:CGRectMake(COLUMN_ONE_LEFT_BOUND, (ROW_ONE_TOP_BOUND + BUTTON_HEIGHT + 10 ), CLEAR_WIDTH, CLEAR_HEIGHT)];
+        [self.clear setTitle:@"Clear" forState:UIControlStateNormal];    
+        
         [self addSubview:self.zero];
         [self addSubview:self.one];
         [self addSubview:self.two];
@@ -128,6 +136,7 @@
         [self addSubview:self.divide];
         [self addSubview:self.enter];
         [self addSubview:self.display];
+        [self addSubview: self.clear];
         
         }
     return self;

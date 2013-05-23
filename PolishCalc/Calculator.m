@@ -7,6 +7,7 @@
 //
 
 #import "Calculator.h"
+#import "PCViewController.h"
 
 @implementation Calculator
 
@@ -35,7 +36,7 @@
 
 - (void)popLastTwoOperandsOffStack:(NSMutableArray *)array
 {
-    if ([self.stack count] <= 1) {
+    if ([self.stack count] == 1) {
         self.operandOne = [self.stack objectAtIndex:[self.stack count] - 1];
         self.operandTwo = nil;
     }
@@ -78,12 +79,13 @@
     else if ([self.operation isEqualToString:@"*"])
     {
         double operandOneDouble = [firstOperand doubleValue];
-        double operandTwoDouble = [secondOperand doubleValue];
         
         if (secondOperand == nil) {
             secondOperand = @"1";
         }
         
+        double operandTwoDouble = [secondOperand doubleValue];
+
         double operandToPushBackDouble = operandOneDouble * operandTwoDouble;
         [self.stack addObject:[NSString stringWithFormat:@"%g", operandToPushBackDouble]];
     }

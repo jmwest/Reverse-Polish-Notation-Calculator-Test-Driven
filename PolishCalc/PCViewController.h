@@ -7,9 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <Foundation/Foundation.h>
+#import "Calculator.h"
 
-@class Calculator;
 
 @interface PCViewController : UIViewController
 
@@ -18,15 +17,14 @@
 @property (strong, nonatomic) NSString *operationPressed;
 @property (strong, nonatomic) Calculator *calc;
 
-- (IBAction)operandWasPressed:(UIButton *)sender;
-//- (IBAction)operationWasPressed:(id)sender;
-- (IBAction)enterWasPressed:(UIButton *)sender;
+- (id)init;
 
-//- (void)obtainOperandPressedName;
-//- (void)obtainOperationPressedName;
-//- (void)enterPressed;
-//- (void)appendNewNumeral;
-//- (void)addOperandToStack;
-//- (void)performSelectedOperation;
+- (IBAction)operandWasPressed:(UIButton *)sender;
+- (BOOL)operationWasPressed:(UIButton *)sender;
+- (BOOL)enterWasPressed:(UIButton *)sender;
+- (IBAction)clearWasPressed:(UIButton *)sender;
+-(BOOL)respondsToSelector:(SEL)aSelector;
+
+- (void)initializeButtons;
 
 @end
