@@ -105,8 +105,11 @@
 {
     [calc pushNumberOnStack:@"1"];
     [calc pushNumberOnStack:@"2"];
+    [calc pushNumberOnStack:@"2"];
+    [calc pushNumberOnStack:@"5"];
+    [calc popLastTwoOperandsOffStack:calc.stack];
     calc.operation = @"+";
-    [calc calculateUsingFirstOperandOffStack:@"5" andSecondOperandOffStack:@"2"];
+    [calc calculateUsingFirstOperandOffStack:calc.operandOne andSecondOperandOffStack:calc.operandTwo];
     GHAssertTrue([[calc.stack objectAtIndex:( [calc.stack count] - 1 ) ] isEqualToString:@"7"], @"The final answer after the addition operation should be 7");
 }
 

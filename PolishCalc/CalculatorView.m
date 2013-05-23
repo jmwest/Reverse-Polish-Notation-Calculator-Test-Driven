@@ -49,51 +49,68 @@
         
         self.zero = [UIButton buttonWithType:UIButtonTypeRoundedRect];
         [self.zero setFrame:CGRectMake(COLUMN_ONE_LEFT_BOUND, ROW_FIVE_TOP_BOUND, BUTTON_WIDTH, BUTTON_HEIGHT)];
+        [self.zero setTitle:@"0" forState:UIControlStateNormal];
         
         self.one = [UIButton buttonWithType:UIButtonTypeRoundedRect];
         [self.one setFrame:CGRectMake(COLUMN_ONE_LEFT_BOUND, ROW_FOUR_TOP_BOUND, BUTTON_WIDTH, BUTTON_HEIGHT)];
+        [self.one setTitle:@"1" forState:UIControlStateNormal];
         
         self.two = [UIButton buttonWithType:UIButtonTypeRoundedRect];
         [self.two setFrame:CGRectMake(COLUMN_TWO_LEFT_BOUND, ROW_FOUR_TOP_BOUND, BUTTON_WIDTH, BUTTON_HEIGHT)];
+        [self.two setTitle:@"2" forState:UIControlStateNormal];
         
         self.three = [UIButton buttonWithType:UIButtonTypeRoundedRect];
         [self.three setFrame:CGRectMake(COLUMN_THREE_LEFT_BOUND, ROW_FOUR_TOP_BOUND, BUTTON_WIDTH, BUTTON_HEIGHT)];
+        [self.three setTitle:@"3" forState:UIControlStateNormal];
         
         self.four = [UIButton buttonWithType:UIButtonTypeRoundedRect];
         [self.four setFrame:CGRectMake(COLUMN_ONE_LEFT_BOUND, ROW_THREE_TOP_BOUND, BUTTON_WIDTH, BUTTON_HEIGHT)];
+        [self.four setTitle:@"4" forState:UIControlStateNormal];
         
         self.five = [UIButton buttonWithType:UIButtonTypeRoundedRect];
         [self.five setFrame:CGRectMake(COLUMN_TWO_LEFT_BOUND, ROW_THREE_TOP_BOUND, BUTTON_WIDTH, BUTTON_HEIGHT)];
+        [self.five setTitle:@"5" forState:UIControlStateNormal];
         
         self.six = [UIButton buttonWithType:UIButtonTypeRoundedRect];
         [self.six setFrame:CGRectMake(COLUMN_THREE_LEFT_BOUND, ROW_THREE_TOP_BOUND, BUTTON_WIDTH, BUTTON_HEIGHT)];
+        [self.six setTitle:@"6" forState:UIControlStateNormal];
         
         self.seven = [UIButton buttonWithType:UIButtonTypeRoundedRect];
         [self.seven setFrame:CGRectMake(COLUMN_ONE_LEFT_BOUND, ROW_TWO_TOP_BOUND, BUTTON_WIDTH, BUTTON_HEIGHT)];
+        [self.seven setTitle:@"7" forState:UIControlStateNormal];
         
         self.eight = [UIButton buttonWithType:UIButtonTypeRoundedRect];
         [self.eight setFrame:CGRectMake(COLUMN_TWO_LEFT_BOUND, ROW_TWO_TOP_BOUND, BUTTON_WIDTH, BUTTON_HEIGHT)];
+        [self.eight setTitle:@"8" forState:UIControlStateNormal];
         
         self.nine = [UIButton buttonWithType:UIButtonTypeRoundedRect];
         [self.nine setFrame:CGRectMake(COLUMN_THREE_LEFT_BOUND, ROW_TWO_TOP_BOUND, BUTTON_WIDTH, BUTTON_HEIGHT)];
+        [self.nine setTitle:@"9" forState:UIControlStateNormal];
         
         self.add = [UIButton buttonWithType:UIButtonTypeRoundedRect];
         [self.add setFrame:CGRectMake(COLUMN_FOUR_LEFT_BOUND, ROW_TWO_TOP_BOUND, BUTTON_WIDTH, BUTTON_HEIGHT)];
+        [self.add setTitle:@"+" forState:UIControlStateNormal];
         
         self.subtract = [UIButton buttonWithType:UIButtonTypeRoundedRect];
         [self.subtract setFrame:CGRectMake(COLUMN_FOUR_LEFT_BOUND, ROW_THREE_TOP_BOUND, BUTTON_WIDTH, BUTTON_HEIGHT)];
+        [self.subtract setTitle:@"-" forState:UIControlStateNormal];
         
         self.multiply = [UIButton buttonWithType:UIButtonTypeRoundedRect];
         [self.multiply setFrame:CGRectMake(COLUMN_FOUR_LEFT_BOUND, ROW_FOUR_TOP_BOUND, BUTTON_WIDTH, BUTTON_HEIGHT)];
+        [self.multiply setTitle:@"*" forState:UIControlStateNormal];
         
         self.divide = [UIButton buttonWithType:UIButtonTypeRoundedRect];
         [self.divide setFrame:CGRectMake(COLUMN_FOUR_LEFT_BOUND, ROW_FIVE_TOP_BOUND, BUTTON_WIDTH, BUTTON_HEIGHT)];
+        [self.divide setTitle:@"/" forState:UIControlStateNormal];
         
         self.enter = [UIButton buttonWithType:UIButtonTypeRoundedRect];
         [self.enter setFrame:CGRectMake(COLUMN_TWO_LEFT_BOUND, ROW_FIVE_TOP_BOUND, ENTER_WIDTH, BUTTON_HEIGHT)];
+        [self.enter setTitle:@"Enter" forState:UIControlStateNormal];
         
         self.display = [[UILabel alloc] initWithFrame:CGRectMake(COLUMN_ONE_LEFT_BOUND, ROW_ONE_TOP_BOUND, DISPLAY_WIDTH, BUTTON_HEIGHT)];
         [self.display setBackgroundColor:[UIColor whiteColor]];
+        [self.display setTextAlignment:NSTextAlignmentRight];
+        [self.display setText:@"0"];
         
         [self addSubview:self.zero];
         [self addSubview:self.one];
